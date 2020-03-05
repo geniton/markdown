@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "yarn dev",
-    "dev": "webpack-dashboard -- node server.js",
+    "dev": "node server.js",
     "test": "jest --coverage",
     "test:watch": "yarn test -- --watch",
     "lint": "standard --parser babel-eslint --verbose | snazzy",
@@ -49,13 +49,16 @@
     "standard-loader": "^6.0.1",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
-    "webpack": "^3.6.0",
+    "webpack": "^3.12.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dashboard": "^1.0.0-5",
     "webpack-dev-server": "^2.8.2"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "highlight.js": "^9.18.1",
+    "marked": "^0.8.0",
+    "normalize.css": "^8.0.1",
     "preact": "^8.2.5",
     "preact-compat": "^3.17.0",
     "prop-types": "^15.5.10",

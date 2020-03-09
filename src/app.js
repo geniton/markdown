@@ -1,7 +1,18 @@
 import React, { Component } from 'react'
-import Marked from 'marked'
+import marked from 'marked'
 import MarkdownEditor from './markdownEditor'
 import './css/style.css'
+
+import('highlight.js').then(hljs => {
+  return marked.setOptions({
+    highlight: (code, lang) => {
+      if(lang && hljs.getLanguage(lang)){
+        return hljs.highlight(lang, code).value
+      }
+      return hljs.highlightAuto(code).value
+    }
+  })
+})
 
 class App extends Component {
   constructor (props) {
@@ -20,7 +31,7 @@ class App extends Component {
 
     this.getMarkup = () => {
       return {
-        __html: Marked(this.state.value)
+        __html: marked(this.state.value)
       }
     }
   }

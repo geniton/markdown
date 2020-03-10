@@ -34,6 +34,29 @@ body {
   width: 100%;
 }
 
+.editor-header .save{
+  border: 0;
+  background: green;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.button-remove{
+  border: 0;
+  background: red;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.button-remove:hover{
+  background: darkred;
+}
+
 .editor-header .save-message {
   align-items: center;
   color: #fff;

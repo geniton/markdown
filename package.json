@@ -61,11 +61,13 @@
     "express": "^4.17.1",
     "highlight.js": "^9.18.1",
     "marked": "^0.8.0",
+    "node-uuid": "^1.4.8",
     "normalize.css": "^8.0.1",
     "preact": "^10.3.3",
     "preact-compat": "^3.19.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "strclass": "^2.0.9"
   }
 }
